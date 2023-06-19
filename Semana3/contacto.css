@@ -1,0 +1,76 @@
+/*Formulacion de contactos html*/
+.contformulario{
+    width: auto;
+    height: 800px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    /* margin-left: 250px;
+    margin-right: 100px; */
+    border: 1px solid gray;
+    border-radius: 15px;
+    /* float: left; */
+    background-color: whitesmoke;
+    
+}
+form>input{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-color: gray;
+    font-size: 15px;
+}
+form>textarea{
+    
+    margin:auto;
+}
+form button{
+    background-color: gray;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px whitesmoke;
+    font-size: 20px;
+    margin-left: 240px;
+}
+form button:hover{
+    color: whitesmoke;
+    width: 30%;
+}
+
+/* .contmapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.contvideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+iframe{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    
+} */
+
+
+
