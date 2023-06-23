@@ -1,40 +1,31 @@
-class Formulario{
-    // const misNombres = document.getElementById("nombres");
-    // const misApellidos = document.getElementById("apellidos");
-    // const miDocumento = document.getElementById("identificacion");
-    // const miCorreo = document.getElementById("correo");
-    // const miUsuario = document.getElementById("usuario");
-    // const miObservaciones = document.getElementById("observaciones");
-    constructor(){
-        this.misNombres = document.getElementById("nombres")
-        this.misApellidos = document.getElementById("apellidos");
-        this.miDocumento = document.getElementById("identificacion");
-        this.miCorreo = document.getElementById("correo");
-        this.miUsuario = document.getElementById("usuario");
-        this.miObservaciones = document.getElementById("observaciones");
-    }
-}
+const misNombres = document.getElementById("nombres");
+const misApellidos = document.getElementById("apellidos");
+const miDocumento = document.getElementById("identificacion");
+const miCorreo = document.getElementById("correo");
+const miUsuario = document.getElementById("usuario");
+const miObservaciones = document.getElementById("observaciones");
+
 //validar si las cajas de texto estan vacias
 function validar() {
-    if ((this.misNombres.value === "")
-        || (this.misApellidos.value === "")
-        || (this.miDocumento.value === "")
-        || (this.miCorreo.value === "")
-        || (this.miUsuario.value === "")
-        || (this.miObservaciones.value === "")) {
+    if ((misNombres.value === "")
+        || (misApellidos.value === "")
+        || (miDocumento.value === "")
+        || (miCorreo.value === "")
+        || (miUsuario.value === "")
+        || (miObservaciones.value === "")) {
         alert("Hay campos vacios");
         // return;
     }
-    validarNombres(this.misNombres);
-    validarApellidos(this.misApellidos);
-    validarCorreo(this.miCorreo);
-    validarUsuario(this.miUsuario);
-    validarObservaciones(this.miObservaciones);
+    validarNombres(misNombres);
+    validarApellidos(misApellidos);
+    validarCorreo(miCorreo);
+    validarUsuario(miUsuario);
+    validarObservaciones(miObservaciones);
 }
 // Validar nombres maximo 60 caracteres
 function validarNombres() {
     const nombresRegex = /^([a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s ]{0,60})$/g;
-    if (nombresRegex.test(this.misNombres.value)) {
+    if (nombresRegex.test(misNombres.value)) {
         // alert("Nombres valido");
         return true;
     } else {
@@ -45,7 +36,7 @@ function validarNombres() {
 //validar apellidos maximo 60 caracteres
 function validarApellidos() {
     const apellidosRegex = /^([a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s ]{0,60})$/g;
-    if (apellidosRegex.test(this.misApellidos.value)) {
+    if (apellidosRegex.test(misApellidos.value)) {
         // alert("Apellido valido");
         return false;
     } else {
@@ -56,7 +47,7 @@ function validarApellidos() {
 //valida el correo
 function validarCorreo() {
     const correoRegex = /^([\w.]+[^#$%&\/()='"!?¡]\w*-*)([@])(\w)+(\.[a-z]{2,3})$/g;
-    if (correoRegex.test(this.miCorreo.value)) {
+    if (correoRegex.test(miCorreo.value)) {
         // alert("Correo valido");
         return true;
     } else {
@@ -67,10 +58,10 @@ function validarCorreo() {
 //validar usuario maximo 25 caracteres
 function validarUsuario() {
     const usuarioRegex = /^([a-zA-Z0-9_-]{0,25})$/g;
-    if (usuarioRegex.test(this.miUsuario.value)) {
+    if (usuarioRegex.test(miUsuario.value)) {
         // alert("Usuario valido");
         return true;
-    } else{
+    } else {
         alert("sobrepasa los cantidad de caracteres permitidos para usuario");
         return false;
     }
@@ -78,7 +69,7 @@ function validarUsuario() {
 //validar observaciones maximo 200 caracteres
 function validarObservaciones() {
     const observacionesRegex = /^([a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s ]{0,20})$/g;
-    if (observacionesRegex.test(this.miObservaciones.value)) {
+    if (observacionesRegex.test(miObservaciones.value)) {
         // alert("Apellido valido");
         return false;
     } else {
@@ -86,10 +77,6 @@ function validarObservaciones() {
         return true;
     }
 }
-
-
-
-
 
 
 

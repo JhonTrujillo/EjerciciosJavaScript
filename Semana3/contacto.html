@@ -43,15 +43,84 @@
         </div>
     </header>
     <div class="contformulario">
-        <form>
-            <h3>Contactame</h3>
-            <input type="text" id="nombres" placeholder="Nombres">
-            <input type="text" id="apellidos" placeholder="Apellidos">
-            <input type="number" id="identificacion" placeholder="Documento">
-            <input type="email" id="correo" placeholder="Correo">
-            <input type="text" id="usuario" placeholder="Usuario">
-            <textarea name="" id="observaciones" cols="60" rows="10"></textarea>
-            <button type="submit" id="btnvalidar" onclick="validar()">Enviar</button>
+        <h3>Contactame</h3>
+        <form action="" class="formulario">
+            <!-- Grupo Nombres -->
+            <div class="formulario_grupo" id="grupo_nombres">
+                <label for="nombres" class="formulario_label">Nombres</label>
+                <div class="formulario_grupo_input">
+                    <input type="text" class="formulario_input" id="nombres" name="nombres" placeholder="Pepito">
+                    <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
+                    <p class="formulario_input_error">Los nombre tienes un maximo de 60 caracteres</p>
+                </div>
+            </div>
+
+            <!-- Grupo Apellido -->
+            <div class="formulario_grupo" id="grupo_apellidos">
+                <label for="apellidos" class="formulario_label">Apellidos</label>
+                <div class="formulario_grupo_input">
+                    <input type="text" class="formulario_input" id="apellidos" name="apellidos" placeholder="Perez">
+                    <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
+                    <p class="formulario_input_error">Los apellidos tiene un maximo de 60 caracteres</p>
+                </div>
+            </div>
+
+
+            <!-- Grupo Identificacion -->
+            <div class="formulario_grupo" id="grupo_identificacion">
+                <label for="identificacion" class="formulario_label">Cedula</label>
+                <div class="formulario_grupo_input">
+                    <input type="text" class="formulario_input" id="identificacion" name="identificacion"
+                        placeholder="123456789">
+                    <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
+                    <p class="formulario_input_error">usar solo numeros</p>
+                </div>
+            </div>
+
+
+            <!-- Grupo Correo -->
+            <div class="formulario_grupo" id="grupo_correo">
+                <label for="correo" class="formulario_label">Correo</label>
+                <div class="formulario_grupo_input">
+                    <input type="text" class="formulario_input" id="correo" name="correo"
+                        placeholder="pepitoperez@dominio.com">
+                    <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
+                    <p class="formulario_input_error">El correo solo puede contener letras, numeros, puntos, guiones,
+                        guiones bajo.</p>
+                </div>
+            </div>
+
+            <!-- Grupo Usuario -->
+            <div class="formulario_grupo" id="grupo_usuario">
+                <label for="usuario" class="formulario_label">Usuario</label>
+                <div class="formulario_grupo_input">
+                    <input type="text" class="formulario_input" id="usuario" name="usuario" placeholder="Pepito90">
+                    <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
+                    <p class="formulario_input_error">El usuario tiene que ser de 4 a 25 digitos y solo puede contener
+                        numeros, letras, guion bajo</p>
+                </div>
+            </div>
+
+            <!-- Grupo Observaciones -->
+            <div class="formulario_grupo" id="grupo_observaciones">
+                <label for="observaciones" class="formulario_label">observaciones</label>
+                <div class="formulario_grupo_input">
+                    <!-- <input type="text" class="formulario_input" id="observaciones" name="observaciones" placeholder="Pepito90"> -->
+                    <textarea name="" id="observaciones" cols="60" rows="10"></textarea>
+                    <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
+                    <p class="formulario_input_error">Cantidad maxima 200 caracteres</p>
+                </div>
+            </div>
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><br>Error: Por favor deligencias el formulario
+                    correctamente, hay campos vacios</br> </p>
+            </div>
+            <!-- grupo boton -->
+            <div class="formulario_grupo grupo_boton">
+                <button type="submit" class="formulario_boton" id="btnvalidar" onclick="validar()">Enviar</button>
+                <p class="formulario_mensaje_exito" id="formulario_mensaje_exito">Formulario enviado exitosamente</p>
+            </div>
+            
         </form>
         <footer>
             <div class="agenda">
@@ -101,8 +170,6 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>
         <script src="validarForm.js"></script>
-
-
 </body>
 
 </html>
