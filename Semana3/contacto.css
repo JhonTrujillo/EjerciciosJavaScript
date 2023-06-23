@@ -1,17 +1,8 @@
-.contformulario {
-    width: auto;
-    height: auto;
-    padding: 20px;
-    margin-bottom: 20px;
-}
 .formulario {
-    margin: auto;
-    float: center;
-    width: 80%;
-    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     
-    
-     
 }
 
 .formulario_label {
@@ -19,14 +10,17 @@
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
+    background-color: blue;
+    width: 50%;
 }
 
 .formulario_grupo_input {
     position: relative;
+    
 }
 
 .formulario_input {
-    width: 30%;
+    width: 50%;
     background: whitesmoke;
     border: 3px solid transparent;
     border-radius: 3px;
@@ -45,19 +39,36 @@
 .formulario_input_error {
     font-size: 12px;
     margin-bottom: 0;
+    width: 50%;
     /* display: none; */
 }
 
-.formulario_input_error_activo{
+.formulario_input_error-activo{
     display: block;
 }
 .formulario_validacion_estado{
     position: absolute;
-    
     top: 18px; 
     z-index: 100;
-    
+    opacity: 0;
 }
+.formulario_mensaje{
+    height: 45%;
+    
+    background-color: brown;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+.grupo_boton,
+.formulario_boton,
+.formulario_mensaje_exito{
+    grid-column: span 2;
+    background-color: blueviolet;
+    width: 76%;
+
+
+}
+
 
 /*Formulacion de contactos html*/
 /* .contformulario {

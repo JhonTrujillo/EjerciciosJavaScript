@@ -42,7 +42,7 @@
             <div id="listadoBusqueda"></div>
         </div>
     </header>
-    <div class="contformulario">
+    <!-- <div class="contformulario"> -->
         <h3>Contactame</h3>
         <form action="" class="formulario">
             <!-- Grupo Nombres -->
@@ -96,7 +96,7 @@
                 <div class="formulario_grupo_input">
                     <input type="text" class="formulario_input" id="usuario" name="usuario" placeholder="Pepito90">
                     <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
-                    <p class="formulario_input_error">El usuario tiene que ser de 4 a 25 digitos y solo puede contener
+                    <p class="formulario_input_error">Usuario de 4 a 25 digitos y solo puede contener
                         numeros, letras, guion bajo</p>
                 </div>
             </div>
@@ -106,21 +106,21 @@
                 <label for="observaciones" class="formulario_label">observaciones</label>
                 <div class="formulario_grupo_input">
                     <!-- <input type="text" class="formulario_input" id="observaciones" name="observaciones" placeholder="Pepito90"> -->
-                    <textarea name="" id="observaciones" cols="60" rows="10"></textarea>
+                    <textarea name="" id="observaciones" cols="50" rows="1"></textarea>
                     <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
                     <p class="formulario_input_error">Cantidad maxima 200 caracteres</p>
                 </div>
             </div>
             <div class="formulario_mensaje" id="formulario_mensaje">
                 <p><i class="fa-solid fa-triangle-exclamation"></i><br>Error: Por favor deligencias el formulario
-                    correctamente, hay campos vacios</br> </p>
+                    correctamente.</br> </p>
             </div>
             <!-- grupo boton -->
             <div class="formulario_grupo grupo_boton">
                 <button type="submit" class="formulario_boton" id="btnvalidar" onclick="validar()">Enviar</button>
                 <p class="formulario_mensaje_exito" id="formulario_mensaje_exito">Formulario enviado exitosamente</p>
             </div>
-            
+        
         </form>
         <footer>
             <div class="agenda">
