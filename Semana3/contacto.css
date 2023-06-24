@@ -1,26 +1,28 @@
 .formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    
+    height: auto;
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
-
+/* label */
 .formulario_label {
-    display: block;
+    text-align: left;
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
-    background-color: blue;
-    width: 50%;
 }
 
+/*contenedor de input, imagen x, mensaje parrafo*/
 .formulario_grupo_input {
     position: relative;
-    
+    width: 100%;
+    justify-content: center;
 }
-
+/*input*/
 .formulario_input {
-    width: 50%;
+    width: 95%;
     background: whitesmoke;
     border: 3px solid transparent;
     border-radius: 3px;
@@ -30,94 +32,26 @@
     transition: .3s ease all;
 }
 
+/*input efecto focus*/
 .formulario_input:focus {
-    border: 3px solid rgb(59, 106, 150);
+    border: 3px solid rgb(33, 42, 51);
     outline: none;
     box-shadow: 3px 0px white;
 }
 
+/*Parafo que contiene los mensajes de error*/
 .formulario_input_error {
-    font-size: 12px;
+    width:100%;
     margin-bottom: 0;
-    width: 50%;
+    font-size: 12px;
+    text-align: center;
+    border: 3px solid red;
     /* display: none; */
 }
-
-.formulario_input_error-activo{
-    display: block;
+/*Contenedor boton img X */
+.formulario_mensaje_exito {
+    width: 100%;
 }
-.formulario_validacion_estado{
-    position: absolute;
-    top: 18px; 
-    z-index: 100;
-    opacity: 0;
-}
-.formulario_mensaje{
-    height: 45%;
-    
-    background-color: brown;
-    padding: 0 15px;
-    border-radius: 3px;
-}
-.grupo_boton,
-.formulario_boton,
-.formulario_mensaje_exito{
-    grid-column: span 2;
-    background-color: blueviolet;
-    width: 76%;
-
-
-}
-
-
-/*Formulacion de contactos html*/
-/* .contformulario {
-    width: auto;
-    height: 800px;
-    padding: 20px;
-    margin-bottom: 20px;
-
-}
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    margin: auto;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background-color: whitesmoke;
-
-}
-
-form>input {
-    width: 90%;
-    height: 30px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border-color: gray;
-    font-size: 15px;
-}
-
-form>textarea {
-    margin: auto;
-}
-
-form button {
-    background-color: gray;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px whitesmoke;
-    font-size: 20px;
-    margin-left: 240px;
-} */
-
 .formulario_boton:hover {
     color: whitesmoke;
     width: 10%;

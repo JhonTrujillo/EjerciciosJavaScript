@@ -4,23 +4,31 @@ const miDocumento = document.getElementById("identificacion");
 const miCorreo = document.getElementById("correo");
 const miUsuario = document.getElementById("usuario");
 const miObservaciones = document.getElementById("observaciones");
+var error = document.getElementById("formulario_input_error");
+
+// form.addEventListener("submit", (e) =>{
+//      e.preventDefault();
+// });
 
 //validar si las cajas de texto estan vacias
 function validar() {
-    if ((misNombres.value === "")
-        || (misApellidos.value === "")
-        || (miDocumento.value === "")
-        || (miCorreo.value === "")
-        || (miUsuario.value === "")
-        || (miObservaciones.value === "")) {
+    if((misNombres.value === "") 
+            || (misApellidos.value === "")
+            || (miDocumento.value === "")
+            || (miCorreo.value === "")
+            || (miUsuario.value === "")
+            || (miObservaciones.value === "")){
         alert("Hay campos vacios");
+        // let elemento = document.getElementById("nombres");
+        // elemento.lastElementChild.innerHTML = "Nombre no valido";
         // return;
     }
-    validarNombres(misNombres);
-    validarApellidos(misApellidos);
-    validarCorreo(miCorreo);
-    validarUsuario(miUsuario);
-    validarObservaciones(miObservaciones);
+
+validarNombres(misNombres);
+validarApellidos(misApellidos);
+validarCorreo(miCorreo);
+validarUsuario(miUsuario);
+validarObservaciones(miObservaciones);
 }
 // Validar nombres maximo 60 caracteres
 function validarNombres() {

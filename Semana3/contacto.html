@@ -53,7 +53,7 @@
                     <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
                     <p class="formulario_input_error">Los nombre tienes un maximo de 60 caracteres</p>
                 </div>
-            </div>
+                 </div>
 
             <!-- Grupo Apellido -->
             <div class="formulario_grupo" id="grupo_apellidos">
@@ -105,20 +105,20 @@
             <div class="formulario_grupo" id="grupo_observaciones">
                 <label for="observaciones" class="formulario_label">observaciones</label>
                 <div class="formulario_grupo_input">
-                    <!-- <input type="text" class="formulario_input" id="observaciones" name="observaciones" placeholder="Pepito90"> -->
-                    <textarea name="" id="observaciones" cols="50" rows="1"></textarea>
+                    <textarea name="" id="observaciones" cols="" rows=""></textarea>
                     <i class="formulario_validacion_estado fa-regular fa-circle-xmark"></i>
                     <p class="formulario_input_error">Cantidad maxima 200 caracteres</p>
                 </div>
-            </div>
-            <div class="formulario_mensaje" id="formulario_mensaje">
-                <p><i class="fa-solid fa-triangle-exclamation"></i><br>Error: Por favor deligencias el formulario
-                    correctamente.</br> </p>
             </div>
             <!-- grupo boton -->
             <div class="formulario_grupo grupo_boton">
                 <button type="submit" class="formulario_boton" id="btnvalidar" onclick="validar()">Enviar</button>
                 <p class="formulario_mensaje_exito" id="formulario_mensaje_exito">Formulario enviado exitosamente</p>
+            </div>
+            <!-- grupo Mensaje -->
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><br>Error: Por favor deligencias el formulario
+                    correctamente.</br> </p>
             </div>
         
         </form>
