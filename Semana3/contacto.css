@@ -45,14 +45,27 @@
     margin-bottom: 0;
     font-size: 12px;
     text-align: center;
-    border: 3px solid red;
-    /* display: none; */
+    /* border: 1px solid red; */
+    display: none;
+    background-color: rgb(207, 109, 109);
+    border-radius: 15px;
 }
+.block{
+    display: block;
+}
+
 /*Contenedor boton img X */
-.formulario_mensaje_exito {
+/* .formulario_mensaje_exito {
     width: 100%;
+} */
+.formulario_boton{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .formulario_boton:hover {
-    color: whitesmoke;
-    width: 10%;
+    background-color: gray;
+    width: 11%;
+    color: black;
 }
